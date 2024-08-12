@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Wallet</title>
+</head>
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Lexend';
+        background-color: #050505;
+        color: #393939;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 45px;
+        font-weight:200;
+        text-decoration: underline;
+        color: rgb(143, 9, 253);
+    }
+
+    h1 {
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    button {
+        background-color: #1e1e1e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 10px;
+    }
+
+    button:hover {
+        background-color: #2c2c2c;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0 0;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        background-color: #111111;
+    }
+
+    ul li {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
+
+    ul li:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    ul li:nth-child(even) {
+        background-color: #f1f1f1;
+    }
+
+    #mLoad {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h2 id="h22">Welcome to wallet generator</h1>
+    <h1 id="mLoad">Mnemo !</h1>
+    <button id="mnemo">Generate mnemo</button>
+    <button id="generateKeypair"> Generate wallet </button>
+    <ul id="walletList"></ul>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bip39@3.0.4/index.js"></script>
+<script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bip39/3.0.4/index.min.js"></script>
+<script src="walletTry.js"></script>
+<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.3/nacl-fast.min.js"></script>
+
+</html>
